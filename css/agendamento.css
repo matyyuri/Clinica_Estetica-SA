@@ -30,7 +30,7 @@ body {
 /* Lado esquerdo - Imagem */
 .imagem {
   flex: 1.2;
-  background: url('foto_cadastro.jpg') no-repeat center center;
+  background: url('../imgs/foto_cadastro.jpg') no-repeat center center;
   background-size: cover;
   position: relative;
 }
