@@ -69,21 +69,6 @@
         display: flex;
         flex-direction: column;
       }
-    
-      footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #000000;
-            color: #fff;
-            text-align: center;
-            padding: 0px 0px;
-            font-size: 15px;
-            border-top: 0px solid #00000033;
-            z-index: 100;
-          }
-      
       
       .submenu a {
         color: #ffffff;
@@ -95,6 +80,26 @@
         border-radius: 6px;
       }
 
+      table {
+        width: 80%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+      }
+      
+      th {
+        background-color: #000000;
+        color: white;
+        text-align: left;
+      }
+      
+      td, th {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+
+      
       .login {
         display: flex;
         gap: 15px;
@@ -116,7 +121,9 @@
       .h2info {
         color: rgb(0, 0, 0);
         font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
       }
+
 
       .headinfo {
         background-color: white;
@@ -128,3 +135,77 @@
         padding-left: 10px;
         margin-top: 20px;
       }
+
+      .navimgs {
+        width: 400px;
+        height: auto;
+        padding: 50px 50px;
+        transition: transform 0.3s ease;
+        border-radius: 10px;
+      }
+
+      .navimgs:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+
+      #imgprocedimento {
+        padding: 20px 40px;
+        display: auto;               
+        margin: 0 auto;              
+        width: 30%;              
+        max-width: 800px;       
+        height: auto;               
+      }
+      
+
+      /* Ocupa 100% da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container principal com espaço flexível */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% da altura da viewport */
+}
+
+/* Faz o conteúdo crescer e o footer descer */
+.container > *:not(footer) {
+  flex: 1;
+}
+
+/* Estilo do footer */
+footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-contato {
+  margin-top: 15px;
+}
+
+.footer-contato p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.footer-contato i {
+  margin-right: 8px;
+  color: #fff;
+}
+
+.footer-contato a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contato a:hover {
+  text-decoration: underline;
+}
